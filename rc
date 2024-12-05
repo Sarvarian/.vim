@@ -9,10 +9,67 @@ set smartindent
 set showcmd
 set wildmenu
 set linebreak
+set modeline
 
 set backupdir=~/.vim/backup//
 set directory=~/.vim/swap//
 set undodir=~/.vim/undo//
 
+map q <Nop>
+map Q <Nop>
 
+" Left, right, down, up.
+noremap n h
+noremap o l
+noremap e j
+noremap u k
+" Scroll up and down.
+noremap U <C-Y>
+noremap E <C-E>
+" Move cursor half page up and down.
+noremap <C-U>  <C-U>
+noremap <C-E>  <C-D>
+" Previous word, next word.
+noremap d b
+noremap D B
+noremap w w
+noremap W W
+" End of next word.
+noremap t e
+" Begin and end of line.
+noremap S ^
+noremap T $
+" Begin and end of page.
+noremap R gg
+noremap H G
+" Move screen to center cursor.
+noremap l zz
+" Move cursor to center of screen.
+noremap L M
+" Undo adn redo.
+noremap z u
+noremap Z <C-r>
+" New line after and before current line.
+noremap ' o
+noremap " O
+" Go to insert mode.
+noremap a a
+noremap A A
+noremap i i
+noremap I I
+" Go to normal mode. Use shift-tab to type tab in insert mode.
+inoremap <Tab> <Esc>
+vnoremap <Tab> <Esc>
+" Delete, yank, put.
+noremap f d
+noremap F D
+noremap k y
+noremap K Y
+noremap p p
+noremap P P
 
+" Quit
+noremap <C-Q> <Esc>:q!<CR>
+noremap <C-S> <Esc>:w<CR>
+
+" vim: set ft=vim:

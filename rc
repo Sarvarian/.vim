@@ -1,6 +1,6 @@
 
 set background=dark
-set scrolloff=3
+set scrolloff=4
 set tabstop=4
 set number
 set relativenumber
@@ -17,6 +17,14 @@ set undodir=~/.vim/undo//
 
 map q <Nop>
 map Q <Nop>
+map n <Nop>
+map N <Nop>
+map e <Nop>
+map E <Nop>
+map o <Nop>
+map O <Nop>
+map u <Nop>
+map U <Nop>
 
 " Left, right, down, up.
 noremap n h
@@ -24,11 +32,11 @@ noremap o l
 noremap e j
 noremap u k
 " Scroll up and down.
-noremap U <C-Y>
-noremap E <C-E>
+noremap U <C-E>
+noremap E <C-Y>
 " Move cursor half page up and down.
-noremap <C-U>  <C-U>
-noremap <C-E>  <C-D>
+noremap <C-U>  <C-U>zz
+noremap <C-E>  <C-D>zz
 " Previous word, next word.
 noremap d b
 noremap D B
@@ -58,8 +66,10 @@ noremap A A
 noremap i i
 noremap I I
 " Go to normal mode. Use shift-tab to type tab in insert mode.
-inoremap <Tab> <Esc>
-vnoremap <Tab> <Esc>
+inoremap <BS> <Esc>
+vnoremap <BS> <Esc>
+" Go to command mode.
+nnoremap / :
 " Delete, yank, put.
 noremap f d
 noremap F D

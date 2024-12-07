@@ -46,7 +46,7 @@ noremap w W
 " End of next word.
 noremap t E
 " Begin and end of line.
-noremap S ^
+noremap H ^
 noremap T $
 " Begin and end of page.
 noremap gg gg
@@ -76,8 +76,8 @@ vnoremap <BS> <Esc>
 nnoremap / :
 
 " Delete, yank, put.
-noremap h x
-noremap H X
+noremap X x
+noremap x X
 noremap d d
 noremap D D
 noremap k y

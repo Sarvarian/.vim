@@ -37,6 +37,7 @@ noremap E <C-Y>
 " Move cursor half page up and down.
 noremap <C-U>  <C-U>zz
 noremap <C-E>  <C-D>zz
+
 " Previous word, next word.
 noremap d b
 noremap D B
@@ -48,18 +49,21 @@ noremap t e
 noremap S ^
 noremap T $
 " Begin and end of page.
-noremap R gg
-noremap H G
+noremap gg gg
+noremap G G
+
 " Move screen to center cursor.
 noremap l zz
 " Move cursor to center of screen.
 noremap L M
+
 " Undo adn redo.
 noremap z u
 noremap Z <C-r>
 " New line after and before current line.
 noremap ' o
 noremap " O
+
 " Go to insert mode.
 noremap a a
 noremap A A
@@ -70,16 +74,24 @@ inoremap <BS> <Esc>
 vnoremap <BS> <Esc>
 " Go to command mode.
 nnoremap / :
+
 " Delete, yank, put.
-noremap f d
-noremap F D
+noremap h x
+noremap H X
+noremap r d
+noremap R D
 noremap k y
 noremap K Y
 noremap p p
 noremap P P
 
-" Quit
+" Substitude 
+" noremap c s
+
+" Quit, Save.
 noremap <C-Q> <Esc>:q!<CR>
 noremap <C-S> <Esc>:w<CR>
+inoremap <C-S> <Esc>:w<CR>
+inoremap <C-Q> <Esc>:q!<CR>
 
 " vim: set ft=vim:

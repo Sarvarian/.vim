@@ -39,12 +39,12 @@ noremap <C-U>  <C-U>zz
 noremap <C-E>  <C-D>zz
 
 " Previous word, next word.
-noremap d b
-noremap D B
-noremap w w
-noremap W W
+noremap R b
+noremap r B
+noremap W w
+noremap w W
 " End of next word.
-noremap t e
+noremap t E
 " Begin and end of line.
 noremap S ^
 noremap T $
@@ -78,8 +78,8 @@ nnoremap / :
 " Delete, yank, put.
 noremap h x
 noremap H X
-noremap r d
-noremap R D
+noremap d d
+noremap D D
 noremap k y
 noremap K Y
 noremap p p

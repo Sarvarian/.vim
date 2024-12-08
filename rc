@@ -37,17 +37,20 @@ noremap E <C-Y>
 " Move cursor half page up and down.
 noremap <C-U>  <C-U>zz
 noremap <C-E>  <C-D>zz
+" Move to begin and end of line.
+noremap N ^
+noremap O $
 
 " Previous word, next word.
 noremap R b
 noremap r B
 noremap W w
 noremap w W
-" End of next word.
+" End of next word, previous word.
 noremap t E
-" Begin and end of line.
-noremap H ^
-noremap T $
+noremap T e
+noremap h gE
+noremap H ge
 " Begin and end of page.
 noremap gg gg
 noremap G G

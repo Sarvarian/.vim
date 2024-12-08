@@ -10,6 +10,7 @@ set showcmd
 set wildmenu
 set linebreak
 set modeline
+set mouse=a
 
 set backupdir=~/.vim/backup//
 set directory=~/.vim/swap//
@@ -38,6 +39,8 @@ inoremap <C-u> <Up>
 " Scroll up and down.
 noremap U <C-E>
 noremap E <C-Y>
+noremap <ScrollWheelUp> <C-E>
+noremap <ScrollWheelDown> <C-Y>
 " Move cursor half page up and down.
 noremap <C-U>  <C-U>zz
 noremap <C-E>  <C-D>zz
@@ -103,6 +106,9 @@ imap <C-'> <BS>
 noremap x s
 noremap X S
 
+" Auto completion.
+inoremap <C-K> <C-N>
+
 " Quit, Save.
 noremap <C-Q> <Esc>:q!<CR>
 noremap <C-S> <Esc>:w<CR>
@@ -112,8 +118,5 @@ inoremap <C-Q> <Esc>:q!<CR>
 " Insert mode commands.
 inoremap \w <Esc>:w<CR>a
 inoremap \\ \
-
-" Auto completion.
-inoremap <C-K> <C-N>
 
 " vim: set ft=vim:

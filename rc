@@ -72,6 +72,10 @@ inoremap <C-L> <Esc>zza
 " Move cursor to center of screen.
 noremap L M
 
+" Back and forth.
+noremap <C-N> <C-O>
+noremap <C-O> <C-I>
+
 " Undo and redo.
 noremap z u
 noremap Z <C-r>

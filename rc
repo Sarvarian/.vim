@@ -39,8 +39,8 @@ inoremap <C-u> <Up>
 " Scroll up and down.
 noremap U <C-E>
 noremap E <C-Y>
-noremap <ScrollWheelUp> <C-E>
-noremap <ScrollWheelDown> <C-Y>
+noremap <ScrollWheelDown> <C-E>
+noremap <ScrollWheelUp> <C-Y>
 " Move cursor half page up and down.
 noremap <C-U>  <C-U>zz
 noremap <C-E>  <C-D>zz

@@ -76,17 +76,18 @@ vnoremap <BS> <Esc>
 nnoremap / :
 
 " Delete, yank, put.
-noremap X x
-noremap x X
+noremap s x
+noremap S X
 noremap d d
 noremap D D
-noremap k y
-noremap K Y
+noremap y y
+noremap Y Y
 noremap p p
 noremap P P
 
 " Substitude 
-" noremap c s
+noremap x s
+noremap X S
 
 " Quit, Save.
 noremap <C-Q> <Esc>:q!<CR>

@@ -1,6 +1,9 @@
 
+set nocompatible
 set background=dark
 set scrolloff=4
+set mouse=a
+set syntax=on
 set tabstop=4
 set number
 set relativenumber
@@ -10,7 +13,6 @@ set showcmd
 set wildmenu
 set linebreak
 set modeline
-set mouse=a
 
 set backupdir=~/.vim/backup//
 set directory=~/.vim/swap//

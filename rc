@@ -31,6 +31,10 @@ noremap n h
 noremap o l
 noremap e j
 noremap u k
+inoremap <C-n> <Left>
+inoremap <C-o> <Right>
+inoremap <C-e> <Down>
+inoremap <C-u> <Up>
 " Scroll up and down.
 noremap U <C-E>
 noremap E <C-Y>
@@ -40,6 +44,10 @@ noremap <C-E>  <C-D>zz
 " Move to begin and end of line.
 noremap N ^
 noremap O $
+inoremap <C-f> <Home>
+inoremap <C-p> <End>
+noremap <C-f> <Home>
+noremap <C-p> <End>
 
 " Previous word, next word.
 noremap R b
@@ -57,10 +65,11 @@ noremap G G
 
 " Move screen to center cursor.
 noremap l zz
+inoremap <C-L> <Esc>zza
 " Move cursor to center of screen.
 noremap L M
 
-" Undo adn redo.
+" Undo and redo.
 noremap z u
 noremap Z <C-r>
 " New line after and before current line.
@@ -77,16 +86,18 @@ inoremap <BS> <Esc>
 vnoremap <BS> <Esc>
 " Go to command mode.
 nnoremap / :
+nnoremap \ :
 
 " Delete, yank, put.
 noremap s x
 noremap S X
 noremap d d
-noremap D D
+noremap D Da
 noremap y y
 noremap Y Y
 noremap p p
 noremap P P
+imap <C-'> <BS>
 
 " Substitude 
 noremap x s
@@ -97,5 +108,12 @@ noremap <C-Q> <Esc>:q!<CR>
 noremap <C-S> <Esc>:w<CR>
 inoremap <C-S> <Esc>:w<CR>
 inoremap <C-Q> <Esc>:q!<CR>
+
+" Insert mode commands.
+inoremap \w <Esc>:w<CR>a
+inoremap \\ \
+
+" Auto completion.
+inoremap <C-K> <C-N>
 
 " vim: set ft=vim:

@@ -28,6 +28,8 @@ map o <Nop>
 map O <Nop>
 map u <Nop>
 map U <Nop>
+map k <Nop>
+map K <Nop>
 
 " Left, right, down, up.
 noremap n h
@@ -38,6 +40,10 @@ inoremap <C-n> <Left>
 inoremap <C-o> <Right>
 inoremap <C-e> <Down>
 inoremap <C-u> <Up>
+cnoremap <C-n> <Left>
+cnoremap <C-o> <Right>
+cnoremap <C-e> <Down>
+cnoremap <C-u> <Up>
 " Scroll up and down.
 noremap U <C-E>
 noremap E <C-Y>
@@ -91,22 +97,33 @@ noremap A A
 noremap i i
 noremap I I
 " Go to normal mode. Use shift-tab to type tab in insert mode.
-inoremap <BS> <Esc>
-vnoremap <BS> <Esc>
+inoremap / <Esc>
+vnoremap / <Esc>
+noremap / <Esc>
+cnoremap / <C-U><Esc> | " Cancel writen command.
+
 " Go to command mode.
 nnoremap / :
-nnoremap \ :
+
+" Escapes
+inoremap ?/ /
+vnoremap ?/ /
+noremap  ?/ /
+cnoremap ?/ /
+inoremap ?? ?
+vnoremap ?? ?
+noremap ?? ?
+cnoremap ?? ?
 
 " Delete, yank, put.
 noremap s x
 noremap S X
 noremap d d
-noremap D Da
+noremap D D
 noremap y y
 noremap Y Y
 noremap p p
 noremap P P
-imap <C-'> <BS>
 
 " Substitude 
 noremap x s
@@ -122,7 +139,6 @@ inoremap <C-S> <Esc>:w<CR>
 inoremap <C-Q> <Esc>:q!<CR>
 
 " Insert mode commands.
-inoremap \w <Esc>:w<CR>a
-inoremap \\ \
+inoremap ?w <Esc>:w<CR>ad
 
 " vim: set ft=vim:

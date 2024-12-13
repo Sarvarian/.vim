@@ -53,17 +53,17 @@ noremap <ScrollWheelUp> <C-Y>
 noremap <C-U>  <C-U>zz
 noremap <C-E>  <C-D>zz
 " Move to begin and end of line.
-noremap N ^
-noremap O $
+noremap <C-N> ^
+noremap <C-O> $
 inoremap <C-f> <Home>
 inoremap <C-p> <End>
 noremap <C-f> <Home>
 noremap <C-p> <End>
 
 " Previous word, next word.
-noremap R b
+noremap N b
 noremap r B
-noremap W w
+noremap O w
 noremap w W
 " End of next word, previous word.
 noremap t E
@@ -81,8 +81,8 @@ inoremap <C-L> <Esc>zza
 noremap L M
 
 " Back and forth.
-noremap <C-N> <C-O>
-noremap <C-O> <C-I>
+noremap R <C-O>
+noremap W <C-I>
 
 " Undo and redo.
 noremap z u

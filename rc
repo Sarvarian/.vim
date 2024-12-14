@@ -53,8 +53,8 @@ noremap <ScrollWheelUp> <C-Y>
 noremap <C-U>  <C-U>zz
 noremap <C-E>  <C-D>zz
 " Move to begin and end of line.
-noremap <C-N> ^
-noremap <C-O> $
+noremap A ^
+noremap I $
 inoremap <C-f> <Home>
 inoremap <C-p> <End>
 noremap <C-f> <Home>
@@ -92,10 +92,10 @@ noremap ' o
 noremap " O
 
 " Go to insert mode.
-noremap a a
-noremap A A
-noremap i i
-noremap I I
+noremap i a
+noremap <C-I> A
+noremap a i
+noremap <C-A> I
 " Go to normal mode. Use shift-tab to type tab in insert mode.
 inoremap / <Esc>
 vnoremap / <Esc>

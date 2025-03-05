@@ -106,14 +106,14 @@ cnoremap / <C-U><Esc> | " Cancel writen command.
 nnoremap / :
 
 " Escapes
-inoremap ?/ /
-vnoremap ?/ /
-noremap  ?/ /
-cnoremap ?/ /
-inoremap ?? ?
-vnoremap ?? ?
-noremap ?? ?
-cnoremap ?? ?
+inoremap ?? /
+vnoremap ?? /
+noremap  ?? /
+cnoremap ?? /
+inoremap ?/ ?
+vnoremap ?/ ?
+noremap ?/ ?
+cnoremap ?/ ?
 
 " Delete, yank, put.
 noremap s x

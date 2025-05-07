@@ -136,6 +136,9 @@ noremap R <C-O>
 "nnoremap ; ;
 nnoremap : ,
 
+nnoremap j t
+nnoremap J T
+
 
 """"""""""""""""""""""""""""""""""""""""
 """"" Edit

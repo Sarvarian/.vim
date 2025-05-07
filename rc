@@ -56,14 +56,16 @@ noremap o l
 noremap e j
 " Cursor Up
 noremap u k
-"inoremap <C-n> <Left>
-"inoremap <C-o> <Right>
-"inoremap <C-e> <Down>
-"inoremap <C-u> <Up>
-"cnoremap <C-n> <Left>
-"cnoremap <C-o> <Right>
-"cnoremap <C-e> <Down>
-"cnoremap <C-u> <Up>
+
+" Cursor Moves
+inoremap <C-n> <Left>
+inoremap <C-o> <Right>
+inoremap <C-e> <Down>
+inoremap <C-u> <Up>
+cnoremap <C-n> <Left>
+cnoremap <C-o> <Right>
+cnoremap <C-e> <Down>
+cnoremap <C-u> <Up>
 
 " Scroll Down
 noremap U <C-E>

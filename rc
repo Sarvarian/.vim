@@ -133,6 +133,9 @@ noremap R <C-O>
 "nnoremap / /
 "nnoremap ? ?
 
+"nnoremap ; ;
+nnoremap : ,
+
 
 """"""""""""""""""""""""""""""""""""""""
 """"" Edit

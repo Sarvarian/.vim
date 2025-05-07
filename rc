@@ -91,14 +91,15 @@ noremap I $
 "noremap <C-f> <Home>
 "noremap <C-p> <End>
 
-" Cursor at Next Word
-noremap O w
-" Cursor at Previous Word
-noremap N b
 " Cursor at Next String
 noremap w W
 " Cursor at Previous String
 noremap r B
+
+" Cursor at Next Word
+noremap O w
+" Cursor at Previous Word
+noremap N b
 
 " Cursor at End of Next String
 noremap t E
@@ -110,9 +111,9 @@ noremap h gE
 noremap H ge
 
 " Go to Page Begin
-noremap gg gg
+noremap gg G
 " Go to Page End
-noremap G G
+noremap G  gg
 
 " Center on Cursor
 noremap l zz
@@ -121,9 +122,18 @@ noremap l zz
 "Cursor at View Center
 noremap L M
 
-" Back and forth.
-noremap R <C-O>
+" Forward
 noremap W <C-I>
+" Backward
+noremap R <C-O>
+
+
+
+""""""""""""""""""""""""""""""""""""""""
+""""" Find
+
+nnoremap f /
+
 
 
 """"""""""""""""""""""""""""""""""""""""
@@ -175,6 +185,12 @@ noremap <C-A>  I
 noremap ' o
 " Append Line
 noremap " O
+
+
+""""""""""""""""""""""""""""""""""""""""
+""""" Visual Mode
+
+vnoremap  v      <C-V>
 
 
 """"""""""""""""""""""""""""""""""""""""

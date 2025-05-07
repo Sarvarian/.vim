@@ -113,7 +113,7 @@ noremap G  gg
 
 " Center on Cursor
 noremap l zz
-"inoremap <C-L> <Esc>zza
+inoremap <C-L> <Esc>zza
 
 "Cursor at View Center
 noremap L M

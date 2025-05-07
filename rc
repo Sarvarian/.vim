@@ -42,6 +42,7 @@ map u <Nop>
 map U <Nop>
 map k <Nop>
 map K <Nop>
+map <C-F> <Nop>
 
 
 """"""""""""""""""""""""""""""""""""""""

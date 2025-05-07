@@ -86,10 +86,6 @@ noremap <C-E>  <C-D>zz
 noremap A ^
 " Cursor at Line Begin
 noremap I $
-"inoremap <C-f> <Home>
-"inoremap <C-p> <End>
-"noremap <C-f> <Home>
-"noremap <C-p> <End>
 
 " Cursor at Next String
 noremap w W
@@ -135,7 +131,6 @@ noremap R <C-O>
 nnoremap f /
 
 
-
 """"""""""""""""""""""""""""""""""""""""
 """"" Edit
 
@@ -160,31 +155,29 @@ noremap y y
 " Copy Line
 noremap Y Y
 " Paste Append
-noremap p p
+noremap x p
 " Paste Prepend
-noremap P P
-
-" Substitute
-"noremap x s
-"noremap X S
+noremap X P
 
 
 """"""""""""""""""""""""""""""""""""""""
 """"" Insert Mode
 
 " Insert at Append
-noremap i      a
+nnoremap i      a
 " Insert at Prepend
-noremap a      i
+nnoremap a      i
 " Insert at Line End
-noremap <C-I>  A
+nnoremap <C-I>  A
 " Insert at Line Begin
-noremap <C-A>  I
+nnoremap <C-A>  I
 
+" Insert Prepend Line
+nnoremap p o
+" Insert Append Line
+nnoremap P O
 " Prepend Line
-noremap ' o
-" Append Line
-noremap " O
+nnoremap <C-P> O<Esc><Down>
 
 
 """"""""""""""""""""""""""""""""""""""""

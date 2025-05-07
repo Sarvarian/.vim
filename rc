@@ -179,9 +179,9 @@ nnoremap P O
 " Prepend Line
 nnoremap <C-P> O<Esc><Down>
 
-" Change to Lowercase Motion
+" Lowercase Motion
 "nnoremap gu gu
-" Change to Uppercase Motion
+" Uppercase Motion
 "nnoremap gU gU
 
 

@@ -130,6 +130,8 @@ noremap R <C-O>
 
 "nnoremap f f
 "nnoremap F F
+"nnoremap / /
+"nnoremap ? ?
 
 
 """"""""""""""""""""""""""""""""""""""""

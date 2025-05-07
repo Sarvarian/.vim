@@ -179,10 +179,23 @@ nnoremap P O
 " Prepend Line
 nnoremap <C-P> O<Esc><Down>
 
+" Change to Lowercase Motion
+"nnoremap gu gu
+" Change to Uppercase Motion
+"nnoremap gU gU
+
 
 """"""""""""""""""""""""""""""""""""""""
 """"" Visual Mode
 
+" Go to Visual Mode
+"nnoremap  v      v
+" Go to Visual Line Mode
+"nnoremap  V      V
+" Go to Visual Block Mode
+"nnoremap <C-V>   <C-V>
+
+" Go to Visual Block Mode
 vnoremap  v      <C-V>
 
 

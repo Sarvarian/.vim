@@ -155,9 +155,9 @@ noremap y y
 " Copy Line
 noremap Y Y
 " Paste Append
-noremap x p
+noremap c p
 " Paste Prepend
-noremap X P
+noremap C P
 
 
 """"""""""""""""""""""""""""""""""""""""

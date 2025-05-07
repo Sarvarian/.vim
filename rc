@@ -1,4 +1,8 @@
 
+
+""""""""""""""""""""""""""""""""""""""""
+""""" Setup
+
 set nocompatible
 set background=dark
 set scrolloff=4
@@ -14,9 +18,17 @@ set wildmenu
 set linebreak
 set modeline
 
+
+""""""""""""""""""""""""""""""""""""""""
+""""" Directories
+
 set backupdir=~/.vim/backup//
 set directory=~/.vim/swap//
 set undodir=~/.vim/undo//
+
+
+""""""""""""""""""""""""""""""""""""""""
+""""" Nop
 
 map q <Nop>
 map Q <Nop>
@@ -31,114 +43,163 @@ map U <Nop>
 map k <Nop>
 map K <Nop>
 
-" Left, right, down, up.
-noremap n h
-noremap o l
-noremap e j
-noremap u k
-inoremap <C-n> <Left>
-inoremap <C-o> <Right>
-inoremap <C-e> <Down>
-inoremap <C-u> <Up>
-cnoremap <C-n> <Left>
-cnoremap <C-o> <Right>
-cnoremap <C-e> <Down>
-cnoremap <C-u> <Up>
-" Scroll up and down.
-noremap U <C-E>
-noremap E <C-Y>
-noremap <ScrollWheelDown> <C-E>
-noremap <ScrollWheelUp> <C-Y>
-" Move cursor half page up and down.
-noremap <C-U>  <C-U>zz
-noremap <C-E>  <C-D>zz
-" Move to begin and end of line.
-noremap A ^
-noremap I $
-inoremap <C-f> <Home>
-inoremap <C-p> <End>
-noremap <C-f> <Home>
-noremap <C-p> <End>
 
-" Previous word, next word.
-noremap N b
-noremap r B
+""""""""""""""""""""""""""""""""""""""""
+""""" Navigation
+
+" Cursor Left
+noremap n h
+" Cursor Right
+noremap o l
+" Cursor Down
+noremap e j
+" Cursor Up
+noremap u k
+"inoremap <C-n> <Left>
+"inoremap <C-o> <Right>
+"inoremap <C-e> <Down>
+"inoremap <C-u> <Up>
+"cnoremap <C-n> <Left>
+"cnoremap <C-o> <Right>
+"cnoremap <C-e> <Down>
+"cnoremap <C-u> <Up>
+
+" Scroll Down
+noremap U <C-E>
+" Scroll Up
+noremap E <C-Y>
+
+" Scroll Down
+noremap <ScrollWheelDown> <C-E>
+" Scroll Up
+noremap <ScrollWheelUp> <C-Y>
+
+" Page Up Center
+noremap <C-U>  <C-U>zz
+" Page Down Center
+noremap <C-E>  <C-D>zz
+
+" Cursor at Line End
+noremap A ^
+" Cursor at Line Begin
+noremap I $
+"inoremap <C-f> <Home>
+"inoremap <C-p> <End>
+"noremap <C-f> <Home>
+"noremap <C-p> <End>
+
+" Cursor at Next Word
 noremap O w
+" Cursor at Previous Word
+noremap N b
+" Cursor at Next String
 noremap w W
-" End of next word, previous word.
+" Cursor at Previous String
+noremap r B
+
+" Cursor at End of Next String
 noremap t E
+" Cursor at End of Next Word
 noremap T e
+" Cursor at End of Previous String
 noremap h gE
+" Cursor at End of Previous Word
 noremap H ge
-" Begin and end of page.
+
+" Go to Page Begin
 noremap gg gg
+" Go to Page End
 noremap G G
 
-" Move screen to center cursor.
+" Center on Cursor
 noremap l zz
-inoremap <C-L> <Esc>zza
-" Move cursor to center of screen.
+"inoremap <C-L> <Esc>zza
+
+"Cursor at View Center
 noremap L M
 
 " Back and forth.
 noremap R <C-O>
 noremap W <C-I>
 
-" Undo and redo.
+
+""""""""""""""""""""""""""""""""""""""""
+""""" Edit
+
+" Undo
 noremap z u
+" Redo
 noremap Z <C-r>
-" New line after and before current line.
+
+" Auto completion.
+inoremap <C-K> <C-N>
+
+" Delete
+noremap s x
+" Backspace
+noremap S X
+" Delete Command
+noremap d d
+" Delete till Line End
+noremap D D
+" Copy Command
+noremap y y
+" Copy Line
+noremap Y Y
+" Paste Append
+noremap p p
+" Paste Prepend
+noremap P P
+
+" Substitute
+"noremap x s
+"noremap X S
+
+
+""""""""""""""""""""""""""""""""""""""""
+""""" Insert Mode
+
+" Insert at Append
+noremap i      a
+" Insert at Prepend
+noremap a      i
+" Insert at Line End
+noremap <C-I>  A
+" Insert at Line Begin
+noremap <C-A>  I
+
+" Prepend Line
 noremap ' o
+" Append Line
 noremap " O
 
-" Go to insert mode.
-noremap i a
-noremap <C-I> A
-noremap a i
-noremap <C-A> I
-" Go to normal mode. Use shift-tab to type tab in insert mode.
-inoremap / <Esc>
-vnoremap / <Esc>
-noremap / <Esc>
-cnoremap / <C-U><Esc> | " Cancel writen command.
 
-" Go to command mode.
-nnoremap / :
+""""""""""""""""""""""""""""""""""""""""
+""""" Escapes
 
-" Escapes
+noremap   /  <Esc>
+nnoremap  /  :
+cnoremap  /  <C-U><Backspace>
+inoremap  /  <Esc>
+vnoremap  /  <Esc>
+
 inoremap ?? /
 vnoremap ?? /
 noremap  ?? /
 cnoremap ?? /
 inoremap ?/ ?
 vnoremap ?/ ?
-noremap ?/ ?
+noremap  ?/ ?
 cnoremap ?/ ?
 
-" Delete, yank, put.
-noremap s x
-noremap S X
-noremap d d
-noremap D D
-noremap y y
-noremap Y Y
-noremap p p
-noremap P P
-
-" Substitude 
-noremap x s
-noremap X S
-
-" Auto completion.
-inoremap <C-K> <C-N>
 
 " Quit, Save.
-noremap <C-Q> <Esc>:q!<CR>
-noremap <C-S> <Esc>:w<CR>
-inoremap <C-S> <Esc>:w<CR>
-inoremap <C-Q> <Esc>:q!<CR>
+"noremap <C-Q> <Esc>:q!<CR>
+"noremap <C-S> <Esc>:w<CR>
+"inoremap <C-S> <Esc>:w<CR>
+"inoremap <C-Q> <Esc>:q!<CR>
 
 " Insert mode commands.
-inoremap ?w <Esc>:w<CR>ad
+"inoremap ?w <Esc>:w<CR>ad
 
 " vim: set ft=vim:

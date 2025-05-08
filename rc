@@ -32,14 +32,14 @@ set undodir=~/.vim/undo//
 """"""""""""""""""""""""""""""""""""""""
 """"" Nop
 
-map q <nop>
-map Q <nop>
+"map q <nop>
+"map Q <nop>
 map d <nop>
 map D <nop>
 map s <nop>
 map S <nop>
-map * <nop>
-map # <nop>
+"map * <nop>
+"map # <nop>
 map f <nop>
 map F <nop>
 map n <nop>

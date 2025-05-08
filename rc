@@ -112,8 +112,8 @@ noremap gg G
 noremap G  gg
 
 " Center on Cursor
-noremap l zz
-inoremap <C-L> <Esc>zza
+noremap k zz
+inoremap <C-K> <Esc>zza
 
 "Cursor at View Center
 noremap L M
@@ -130,14 +130,26 @@ noremap R <C-O>
 
 "nnoremap f f
 "nnoremap F F
-"nnoremap / /
-"nnoremap ? ?
-
-"nnoremap ; ;
-nnoremap : ,
 
 nnoremap j t
 nnoremap J T
+
+nnoremap ? /
+nnoremap > ?
+
+" Repeat Character Search Forward
+noremap  ,      ;
+" Repeat Character Search Backward
+noremap  l      ,
+" Repeat String Search Forward
+noremap  <      n
+" Repeat String Search Backward
+noremap  L      N
+" Auto Completion Match Forward
+noremap  <C-,>  <C-n>
+" Auto Completion Match Backward
+noremap  <C-L>  <C-p>
+
 
 
 """"""""""""""""""""""""""""""""""""""""
@@ -167,6 +179,15 @@ noremap Y Y
 noremap c p
 " Paste Prepend
 noremap C P
+
+" Indent
+noremap g, >
+" De-indent
+noremap gl <
+
+" Join Line
+noremap ge J
+noremap gE gJ
 
 
 """"""""""""""""""""""""""""""""""""""""
@@ -209,21 +230,24 @@ vnoremap  v      <C-V>
 
 
 """"""""""""""""""""""""""""""""""""""""
+""""" Command Line Mode
+
+" Go to Command Line Mode
+nnoremap  /  :
+
+
+""""""""""""""""""""""""""""""""""""""""
 """"" Escapes
 
-noremap   /  <Esc>
-nnoremap  /  :
 cnoremap  /  <C-U><Backspace>
 inoremap  /  <Esc>
 vnoremap  /  <Esc>
 
 inoremap ?? /
 vnoremap ?? /
-noremap  ?? /
 cnoremap ?? /
 inoremap ?/ ?
 vnoremap ?/ ?
-noremap  ?/ ?
 cnoremap ?/ ?
 
 

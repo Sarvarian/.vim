@@ -258,6 +258,8 @@ inoremap ?/ ?
 vnoremap ?/ ?
 cnoremap ?/ ?
 
+" Repeat
+"noremap . .
 
 " Quit, Save.
 "noremap <C-Q> <Esc>:q!<CR>

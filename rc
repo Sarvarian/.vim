@@ -18,6 +18,7 @@ set wildmenu
 set linebreak
 set modeline
 set incsearch
+set hlsearch
 
 
 """"""""""""""""""""""""""""""""""""""""
@@ -161,9 +162,6 @@ noremap z u
 " Redo
 noremap Z <C-r>
 
-" Auto completion.
-inoremap <C-K> <C-N>
-
 " Delete
 noremap s x
 " Backspace
@@ -246,11 +244,17 @@ nnoremap  /  :
 
 
 """"""""""""""""""""""""""""""""""""""""
-""""" Escapes
+""""" Normal Mode
 
 cnoremap  /  <C-U><Backspace>
 inoremap  /  <Esc>
 vnoremap  /  <Esc>
+
+nnoremap  K  :nohlsearch<CR>
+
+
+""""""""""""""""""""""""""""""""""""""""
+""""" Escapes
 
 inoremap ?? /
 vnoremap ?? /

@@ -165,8 +165,9 @@ nnoremap : F
 nnoremap j t
 nnoremap J T
 
-nnoremap f /
-nnoremap F *
+nnoremap f      /
+nnoremap F      *
+nnoremap <c-f>  ?
 
 " Repeat Character Search Forward
 noremap  <      ;

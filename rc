@@ -159,14 +159,14 @@ noremap R <c-o>
 """"""""""""""""""""""""""""""""""""""""
 """"" Find
 
-nnoremap ; f
-nnoremap : F
+noremap  ;      f
+noremap  :      F
 
-nnoremap j t
-nnoremap J T
+noremap  j      t
+noremap  J      T
 
-nnoremap f      /
-nnoremap F      *
+noremap  f      /
+noremap  F      *
 " Used by other Editors.
 "nnoremap <c-f>
 
@@ -267,8 +267,8 @@ nnoremap p o<Esc><Up>
 vnoremap  v      <c-v>
 
 " Search Selected Text
-vnoremap  f    y/<c-r>"
-vnoremap  F    y/<c-r>"<cr>
+"vnoremap  f    y/<c-r>"
+"vnoremap  F    y/<c-r>"<cr>
 
 
 """"""""""""""""""""""""""""""""""""""""

@@ -185,7 +185,7 @@ noremap z u
 noremap Z <c-r>
 
 " Delete Operator
-noremap d d
+noremap <backspace> d
 
 " Substitute Operator
 noremap s c
@@ -270,7 +270,7 @@ cnoremap  /  <c-u><backspace>
 inoremap  /  <Esc>
 vnoremap  /  <Esc>
 
-nnoremap  <c-k>  :nohlsearch<cr>
+nnoremap  K  :nohlsearch<cr>
 
 
 """"""""""""""""""""""""""""""""""""""""

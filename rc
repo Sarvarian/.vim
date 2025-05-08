@@ -167,14 +167,22 @@ inoremap <C-K> <C-N>
 noremap s x
 " Backspace
 noremap S X
+
 " Delete Command
 noremap d d
 " Delete till Line End
 noremap D D
+
+" Substitute Command
+noremap m c
+" Substitute till Line End
+noremap M C
+
 " Copy Command
 noremap y y
 " Copy Line
 noremap Y Y
+
 " Paste Append
 noremap c p
 " Paste Prepend

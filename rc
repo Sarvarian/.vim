@@ -38,6 +38,10 @@ map d <nop>
 map D <nop>
 map s <nop>
 map S <nop>
+map * <nop>
+map # <nop>
+map f <nop>
+map F <nop>
 map n <nop>
 map N <nop>
 map e <nop>
@@ -153,7 +157,7 @@ nnoremap j t
 nnoremap J T
 
 nnoremap f /
-nnoremap F ?
+nnoremap F *
 
 " Repeat Character Search Forward
 noremap  <      ;
@@ -181,14 +185,12 @@ noremap z u
 noremap Z <c-r>
 
 " Delete Operator
-noremap x d
-" Delete till Line End
-noremap X D
+noremap d d
 
 " Substitute Operator
-noremap m c
+noremap s c
 " Substitute Character Inplace
-noremap M r
+noremap S r
 
 " Copy Operator
 noremap y y

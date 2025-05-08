@@ -184,9 +184,9 @@ noremap s x
 noremap S X
 
 " Delete Operator
-noremap d d
+noremap x d
 " Delete till Line End
-"noremap D D
+noremap X D
 
 " Substitute Operator
 noremap m c

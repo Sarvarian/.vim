@@ -32,19 +32,28 @@ set undodir=~/.vim/undo//
 """"""""""""""""""""""""""""""""""""""""
 """"" Nop
 
-map q <Nop>
-map Q <Nop>
-map n <Nop>
-map N <Nop>
-map e <Nop>
-map E <Nop>
-map o <Nop>
-map O <Nop>
-map u <Nop>
-map U <Nop>
-map k <Nop>
-map K <Nop>
-map <C-F> <Nop>
+map q <nop>
+map Q <nop>
+map n <nop>
+map N <nop>
+map e <nop>
+map E <nop>
+map o <nop>
+map O <nop>
+map u <nop>
+map U <nop>
+map k <nop>
+map K <nop>
+map j <nop>
+map J <nop>
+map l <nop>
+map L <nop>
+map < <nop>
+map > <nop>
+map ? <nop>
+map <c-f> <nop>
+map <c-/> <nop>
+map <c-.> <nop>
 
 
 """"""""""""""""""""""""""""""""""""""""
@@ -60,29 +69,29 @@ noremap e j
 noremap u k
 
 " Cursor Moves
-inoremap <C-n> <Left>
-inoremap <C-o> <Right>
-inoremap <C-e> <Down>
-inoremap <C-u> <Up>
-cnoremap <C-n> <Left>
-cnoremap <C-o> <Right>
-cnoremap <C-e> <Down>
-cnoremap <C-u> <Up>
+inoremap <c-n> <left>
+inoremap <c-o> <right>
+inoremap <c-e> <down>
+inoremap <c-u> <up>
+cnoremap <c-n> <left>
+cnoremap <c-o> <right>
+cnoremap <c-e> <down>
+cnoremap <c-u> <up>
 
 " Scroll Down
-noremap U <C-E>
+noremap U <c-e>
 " Scroll Up
-noremap E <C-Y>
+noremap E <c-y>
 
 " Scroll Down
-noremap <ScrollWheelDown> <C-E>
+noremap <ScrollWheelDown> <c-e>
 " Scroll Up
-noremap <ScrollWheelUp> <C-Y>
+noremap <ScrollWheelUp> <c-y>
 
 " Page Up Center
-noremap <C-U>  <C-U>zz
+noremap <c-u>  <c-u>zz
 " Page Down Center
-noremap <C-E>  <C-D>zz
+noremap <c-e>  <c-d>zz
 
 " Cursor at Line End
 noremap A ^
@@ -115,42 +124,44 @@ noremap G  gg
 
 " Center on Cursor
 noremap k zz
-inoremap <C-K> <Esc>zza
+inoremap <c-k> <esc>zza
 
 "Cursor at View Center
 noremap L M
 
 " Forward
-noremap W <C-I>
+noremap W <c-i>
 " Backward
-noremap R <C-O>
+noremap R <c-o>
 
 
 
 """"""""""""""""""""""""""""""""""""""""
 """"" Find
 
-"nnoremap f f
-"nnoremap F F
+nnoremap ; f
+nnoremap : F
 
 nnoremap j t
 nnoremap J T
 
-nnoremap ? /
-nnoremap > ?
+nnoremap f /
+nnoremap F ?
 
 " Repeat Character Search Forward
-noremap  ,      ;
+noremap  <      ;
 " Repeat Character Search Backward
-noremap  l      ,
+noremap  L      ,
+
 " Repeat String Search Forward
-noremap  <      n
+noremap  ,      n
 " Repeat String Search Backward
-noremap  L      N
+noremap  l      N
+
 " Auto Completion Match Forward
-noremap  <C-,>  <C-n>
+noremap  <c-,>  <c-n>
 " Auto Completion Match Backward
-noremap  <C-L>  <C-p>
+noremap  <c-l>  <c-p>
 
 
 
@@ -160,7 +171,7 @@ noremap  <C-L>  <C-p>
 " Undo
 noremap z u
 " Redo
-noremap Z <C-r>
+noremap Z <c-r>
 
 " Delete
 noremap s x
@@ -183,9 +194,11 @@ noremap y y
 noremap Y Y
 
 " Paste Append
-noremap c p
+noremap  c  p
+noremap gc gp
 " Paste Prepend
-noremap C P
+noremap  C  P
+noremap gC gP
 
 " Indent
 noremap g, >
@@ -205,16 +218,19 @@ nnoremap i      a
 " Insert at Prepend
 nnoremap a      i
 " Insert at Line End
-nnoremap <C-I>  A
+nnoremap <c-i>  A
 " Insert at Line Begin
-nnoremap <C-A>  I
+nnoremap <c-a>  I
 
 " Insert Prepend Line
-nnoremap p o
+nnoremap gP O
 " Insert Append Line
-nnoremap P O
+nnoremap gp o
+nnoremap <c-p> o
 " Prepend Line
-nnoremap <C-P> O<Esc><Down>
+nnoremap P O<Esc><Down>
+" Append Line
+nnoremap p o<Esc><Up>
 
 " Lowercase Motion
 "nnoremap gu gu
@@ -230,10 +246,10 @@ nnoremap <C-P> O<Esc><Down>
 " Go to Visual Line Mode
 "nnoremap  V      V
 " Go to Visual Block Mode
-"nnoremap <C-V>   <C-V>
+"nnoremap <c-v>   <c-v>
 
 " Go to Visual Block Mode
-vnoremap  v      <C-V>
+vnoremap  v      <c-v>
 
 
 """"""""""""""""""""""""""""""""""""""""
@@ -246,11 +262,11 @@ nnoremap  /  :
 """"""""""""""""""""""""""""""""""""""""
 """"" Normal Mode
 
-cnoremap  /  <C-U><Backspace>
+cnoremap  /  <c-u><backspace>
 inoremap  /  <Esc>
 vnoremap  /  <Esc>
 
-nnoremap  K  :nohlsearch<CR>
+nnoremap  <c-k>  :nohlsearch<cr>
 
 
 """"""""""""""""""""""""""""""""""""""""
@@ -267,12 +283,12 @@ cnoremap ?/ ?
 "noremap . .
 
 " Quit, Save.
-"noremap <C-Q> <Esc>:q!<CR>
-"noremap <C-S> <Esc>:w<CR>
-"inoremap <C-S> <Esc>:w<CR>
-"inoremap <C-Q> <Esc>:q!<CR>
+"noremap <c-q> <esc>:q!<cr>
+"noremap <c-s> <esc>:w<cr>
+"inoremap <c-s> <esc>:w<cr>
+"inoremap <c-q> <esc>:q!<cr>
 
 " Insert mode commands.
-"inoremap ?w <Esc>:w<CR>ad
+"inoremap ?w <esc>:w<cr>ad
 
 " vim: set ft=vim:

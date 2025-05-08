@@ -34,6 +34,8 @@ set undodir=~/.vim/undo//
 
 map q <nop>
 map Q <nop>
+map d <nop>
+map D <nop>
 map n <nop>
 map N <nop>
 map e <nop>
@@ -54,6 +56,9 @@ map ? <nop>
 map <c-f> <nop>
 map <c-/> <nop>
 map <c-.> <nop>
+map <c-c> <nop>
+map <c-d> <nop>
+map <c-u> <nop>
 
 
 """"""""""""""""""""""""""""""""""""""""
@@ -181,12 +186,12 @@ noremap S X
 " Delete Operator
 noremap d d
 " Delete till Line End
-noremap D D
+"noremap D D
 
 " Substitute Operator
 noremap m c
-" Substitute till Line End
-noremap M C
+" Substitute Character Inplace
+noremap M r
 
 " Copy Operator
 noremap y y

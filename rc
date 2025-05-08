@@ -36,6 +36,8 @@ map q <nop>
 map Q <nop>
 map d <nop>
 map D <nop>
+map s <nop>
+map S <nop>
 map n <nop>
 map N <nop>
 map e <nop>
@@ -177,11 +179,6 @@ noremap  <c-l>  <c-p>
 noremap z u
 " Redo
 noremap Z <c-r>
-
-" Delete
-noremap s x
-" Backspace
-noremap S X
 
 " Delete Operator
 noremap x d

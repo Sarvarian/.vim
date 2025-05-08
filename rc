@@ -65,6 +65,10 @@ map <c-.> <nop>
 map <c-c> <nop>
 map <c-d> <nop>
 map <c-u> <nop>
+map <c-o> <nop>
+map <c-i> <nop>
+map <c-n> <nop>
+map <c-p> <nop>
 
 
 """"""""""""""""""""""""""""""""""""""""
@@ -89,15 +93,20 @@ cnoremap <c-o> <right>
 cnoremap <c-e> <down>
 cnoremap <c-u> <up>
 
+" Cursor Up Few Lines
+nnoremap <c-n> 8kzz
+" Cursor Down Few Lines
+nnoremap <c-o> 8jzz
+
 " Scroll Down
 noremap U <c-e>
 " Scroll Up
 noremap E <c-y>
 
 " Scroll Down
-noremap <ScrollWheelDown> <c-e>
+noremap <ScrollWheelDown> 5<c-e>
 " Scroll Up
-noremap <ScrollWheelUp> <c-y>
+noremap <ScrollWheelUp> 5<c-y>
 
 " Page Up Center
 noremap <c-u>  <c-u>zz

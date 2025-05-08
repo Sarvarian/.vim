@@ -17,6 +17,7 @@ set showcmd
 set wildmenu
 set linebreak
 set modeline
+set incsearch
 
 
 """"""""""""""""""""""""""""""""""""""""

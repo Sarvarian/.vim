@@ -168,17 +168,17 @@ noremap s x
 " Backspace
 noremap S X
 
-" Delete Command
+" Delete Operator
 noremap d d
 " Delete till Line End
 noremap D D
 
-" Substitute Command
+" Substitute Operator
 noremap m c
 " Substitute till Line End
 noremap M C
 
-" Copy Command
+" Copy Operator
 noremap y y
 " Copy Line
 noremap Y Y

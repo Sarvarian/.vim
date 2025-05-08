@@ -264,6 +264,10 @@ nnoremap p o<Esc><Up>
 " Go to Visual Block Mode
 vnoremap  v      <c-v>
 
+" Search Selected Text
+vnoremap  f    y/<c-r>"
+vnoremap  F    y/<c-r>"<cr>
+
 
 """"""""""""""""""""""""""""""""""""""""
 """"" Command Line Mode

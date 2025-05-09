@@ -243,9 +243,9 @@ nnoremap gP O
 nnoremap gp o
 nnoremap <c-p> o
 " Prepend Line
-nnoremap P O<Esc><Down>
+nnoremap p O<Esc><Down>
 " Append Line
-nnoremap p o<Esc><Up>
+nnoremap P o<Esc><Up>
 
 " Lowercase Motion
 "nnoremap gu gu
@@ -281,9 +281,9 @@ nnoremap  /  :
 """"""""""""""""""""""""""""""""""""""""
 """"" Normal Mode
 
-cnoremap  /  <c-u><backspace>
-inoremap  /  <Esc>
-vnoremap  /  <Esc>
+cnoremap  /  <c-u><backspace><esc>
+inoremap  /  <esc>
+vnoremap  /  <esc>
 
 nnoremap  K  :nohlsearch<cr>
 

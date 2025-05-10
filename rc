@@ -69,6 +69,8 @@ map <c-o> <nop>
 map <c-i> <nop>
 map <c-n> <nop>
 map <c-p> <nop>
+map gp <nop>
+map gP <nop>
 
 
 """"""""""""""""""""""""""""""""""""""""

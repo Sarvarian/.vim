@@ -116,7 +116,7 @@ noremap <c-u>  <c-u>zz
 noremap <c-e>  <c-d>zz
 
 " Cursor at Line End
-noremap A ^
+noremap Y ^
 " Cursor at Line Begin
 noremap I $
 
@@ -205,10 +205,10 @@ noremap s c
 " Substitute Character Inplace
 noremap S r
 
-" Copy Operator
-noremap y y
-" Copy Line
-noremap Y Y
+" Copy Operator / Yank Operator
+noremap a y
+" Copy Line     / Yank Line
+noremap A Y
 
 " Paste Append
 noremap  c  p
@@ -233,11 +233,11 @@ noremap gE gJ
 " Insert at Append
 nnoremap i      a
 " Insert at Prepend
-nnoremap a      i
+nnoremap y      i
 " Insert at Line End
 nnoremap <c-i>  A
 " Insert at Line Begin
-nnoremap <c-a>  I
+nnoremap <c-y>  I
 
 " Insert Prepend Line
 nnoremap gP O

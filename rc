@@ -116,7 +116,7 @@ noremap <c-u>  <c-u>zz
 noremap <c-e>  <c-d>zz
 
 " Cursor at Line End
-noremap Y ^
+noremap Y 0
 " Cursor at Line Begin
 noremap I $
 

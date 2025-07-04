@@ -116,28 +116,28 @@ noremap <c-u>  <c-u>zz
 noremap <c-e>  <c-d>zz
 
 " Cursor at Line End
-noremap Y 0
-" Cursor at Line Begin
 noremap I $
+" Cursor at Line Begin
+noremap Y 0
 
 " Cursor at Next String
-noremap w W
+noremap h W
 " Cursor at Previous String
 noremap r B
 
 " Cursor at Next Word
-noremap O w
+noremap H w
 " Cursor at Previous Word
-noremap N b
+noremap R b
 
 " Cursor at End of Next String
-noremap t E
+noremap w E
 " Cursor at End of Next Word
-noremap T e
+noremap W e
 " Cursor at End of Previous String
-noremap h gE
+noremap t gE
 " Cursor at End of Previous Word
-noremap H ge
+noremap T ge
 
 " Go to Page Begin
 noremap gg G
@@ -152,9 +152,9 @@ inoremap <c-k> <esc>zza
 noremap L M
 
 " Forward
-noremap W <c-i>
+noremap O <c-i>
 " Backward
-noremap R <c-o>
+noremap N <c-o>
 
 
 

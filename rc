@@ -228,6 +228,13 @@ noremap gE gJ
 
 
 """"""""""""""""""""""""""""""""""""""""
+""""" Replace mode
+
+noremap q R
+noremap Q q
+
+
+""""""""""""""""""""""""""""""""""""""""
 """"" Insert Mode
 
 " Insert at Append

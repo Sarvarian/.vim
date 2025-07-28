@@ -96,9 +96,9 @@ cnoremap <c-e> <down>
 cnoremap <c-u> <up>
 
 " Cursor Up Few Lines
-nnoremap <c-n> 8kzz
+nnoremap <c-u> 8kzz
 " Cursor Down Few Lines
-nnoremap <c-o> 8jzz
+nnoremap <c-e> 8jzz
 
 " Scroll Down
 noremap U <c-e>
@@ -111,9 +111,9 @@ noremap <ScrollWheelDown> 5<c-e>
 noremap <ScrollWheelUp> 5<c-y>
 
 " Page Up Center
-noremap <c-u>  <c-u>zz
+noremap <c-n>  <c-u>zz
 " Page Down Center
-noremap <c-e>  <c-d>zz
+noremap <c-o>  <c-d>zz
 
 " Cursor at Line End
 noremap I $

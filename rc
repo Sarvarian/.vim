@@ -101,14 +101,14 @@ cnoremap <c-e> <down>
 cnoremap <c-u> <up>
 
 " Cursor Up Few Lines
-nnoremap N 8kzz
+nnoremap O 8kzz
 " Cursor Down Few Lines
-nnoremap O 8jzz
+nnoremap N 8jzz
 
 " Scroll Down
-noremap E <c-e>
+noremap U <c-e>
 " Scroll Up
-noremap U <c-y>
+noremap E <c-y>
 
 " Scroll Down
 noremap <ScrollWheelDown> 5<c-e>

@@ -140,9 +140,9 @@ noremap t gE
 noremap T ge
 
 " Go to Page Begin
-noremap gg G
+noremap gg gg
 " Go to Page End
-noremap G  gg
+noremap G G
 
 " Center on Cursor
 noremap k zz

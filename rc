@@ -1,6 +1,14 @@
 
 
 """"""""""""""""""""""""""""""""""""""""
+""""" Plugins
+
+source ~/.vim/sexy_scroller.vim
+let g:SexyScroller_EasingStyle=4
+
+
+
+""""""""""""""""""""""""""""""""""""""""
 """"" Setup
 
 set nocompatible
@@ -101,9 +109,9 @@ nnoremap N 8kzz
 nnoremap O 8jzz
 
 " Scroll Down
-noremap U <c-e>
+noremap E <c-e>
 " Scroll Up
-noremap E <c-y>
+noremap U <c-y>
 
 " Scroll Down
 noremap <ScrollWheelDown> 5<c-e>

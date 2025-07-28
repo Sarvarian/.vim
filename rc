@@ -3,9 +3,6 @@
 """"""""""""""""""""""""""""""""""""""""
 """"" Plugins
 
-source ~/.vim/sexy_scroller.vim
-let g:SexyScroller_EasingStyle=4
-
 
 
 """"""""""""""""""""""""""""""""""""""""

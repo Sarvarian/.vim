@@ -48,7 +48,7 @@ let g:ab_all_keyboard_keys = [
 set nocompatible
 set background=dark
 set scrolloff=4
-set mouse=a
+" set mouse=a
 set syntax=on
 set tabstop=4
 set number
@@ -62,6 +62,7 @@ set modeline
 set incsearch
 set hlsearch
 set ignorecase
+set virtualedit=all
 
 
 """"""""""""""""""""""""""""""""""""""""
@@ -361,5 +362,12 @@ cnoremap ?/ ?
 
 " Insert mode commands.
 "inoremap ?w <esc>:w<cr>ad
+
+
+""""""""""""""""""""""""""""""""""""""""
+""""" Tests
+
+" inoremap <C-O> <C-O>
+
 
 " vim: set ft=vim:

@@ -246,10 +246,13 @@ noremap <backspace> d
 
 " Substitute Operator
 nnoremap S c
-vnoremap s c
+vnoremap s r
 " Substitute Character Inplace
 nnoremap s r
 vnoremap S c
+" Substitute Current Line
+nnoremap SS cc
+vnoremap SS cc
 
 " Copy Operator / Yank Operator
 noremap a y

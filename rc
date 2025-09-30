@@ -72,7 +72,7 @@ set hlsearch
 set ignorecase
 set virtualedit=all
 " colorscheme elflord
-set list listchars=tab:⇥\ ,trail:˽,extends:⋯,precedes:⋯
+set list listchars=tab:⇥\ ,trail:˽,extends:⋯,precedes:⋯,conceal:★
 
 
 """"""""""""""""""""""""""""""""""""""""

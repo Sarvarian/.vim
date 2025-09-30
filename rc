@@ -50,6 +50,7 @@ set background=dark
 set scrolloff=4
 " set mouse=a
 set syntax=on
+set backspace=indent,eol,start
 set tabstop=4
 set softtabstop=2
 set shiftwidth=2

@@ -49,6 +49,7 @@ let g:ab_all_keyboard_keys = [
 """"" Setup
 
 set nocompatible
+set title
 set background=dark
 set scrolloff=4
 " set mouse=a
@@ -92,6 +93,8 @@ map s <nop>
 map S <nop>
 "map * <nop>
 "map # <nop>
+map i <nop>
+map I <nop>
 map f <nop>
 map F <nop>
 map n <nop>
@@ -172,9 +175,9 @@ noremap <c-e>  <c-d>zz
 " nnoremap <s-space> <pageup>
 
 " Cursor at Line End
-noremap  I  $
+noremap  i  $
 " Cursor at Line Begin
-noremap gI  0
+noremap  I  0
 
 " Cursor at Next String
 noremap h W
@@ -306,9 +309,9 @@ noremap Q q
 """"" Insert Mode
 
 " Insert at Append
-nnoremap gi    a
+nnoremap  ?    a
 " Insert at Prepend
-nnoremap  i    i
+nnoremap  /    i
 " Insert at Line End
 nnoremap  <c-i>  A
 " Insert at Line Begin
@@ -352,14 +355,14 @@ vnoremap  v      <c-v>
 """"" Command Line Mode
 
 " Go to Command Line Mode
-nnoremap  /  :
+nnoremap  \  :
 
 
 """"""""""""""""""""""""""""""""""""""""
 """"" Normal Mode
 
-cnoremap  /  <c-u><backspace><esc>
-inoremap  /  <esc>
+cnoremap  \  <c-u><backspace><esc>
+inoremap  /  <esc><right>
 vnoremap  /  <esc>
 onoremap  /  <esc>
 snoremap  /  <esc>
@@ -372,10 +375,12 @@ nnoremap  K  :nohlsearch<cr>
 
 inoremap ?? /
 vnoremap ?? /
-cnoremap ?? /
 inoremap ?/ ?
 vnoremap ?/ ?
-cnoremap ?/ ?
+
+cnoremap /\ \
+cnoremap // /
+cnoremap /? ?
 
 " Repeat
 "noremap . .

@@ -240,7 +240,7 @@ noremap  l      N
 " Auto Completion Match Forward
 inoremap  <tab>  <c-n>
 " Auto Completion Match Backward
-inoremap  <s-tab>  <c-n>
+inoremap  <s-tab>  <c-p>
 
 
 

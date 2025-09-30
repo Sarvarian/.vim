@@ -51,10 +51,13 @@ set scrolloff=4
 " set mouse=a
 set syntax=on
 set tabstop=4
-set number
-set relativenumber
+set softtabstop=2
+set shiftwidth=2
+set expandtab
 set autoindent
 set smartindent
+set number
+set relativenumber
 set showcmd
 set wildmenu
 set linebreak

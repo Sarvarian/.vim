@@ -345,6 +345,7 @@ nnoremap  /  :
 cnoremap  /  <c-u><backspace><esc>
 inoremap  /  <esc>
 vnoremap  /  <esc>
+inoremap <c-l> <c-o>
 
 nnoremap  K  :nohlsearch<cr>
 
@@ -358,7 +359,6 @@ cnoremap ?? /
 inoremap ?/ ?
 vnoremap ?/ ?
 cnoremap ?/ ?
-inoremap <c-l> <c-o>
 
 " Repeat
 "noremap . .

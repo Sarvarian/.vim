@@ -3,9 +3,6 @@
 """"""""""""""""""""""""""""""""""""""""
 """"" Todos
 
-" Auto Completion        <C-N>
-" Temp Insert-to-Normal  <C-O>
-
 
 """"""""""""""""""""""""""""""""""""""""
 """"" Plugins
@@ -288,6 +285,13 @@ noremap gl <
 " Join Line
 noremap ge J
 noremap gE gJ
+
+
+""""""""""""""""""""""""""""""""""""""""
+""""" File System
+
+" nnoremap <down> :next<CR>
+" nnoremap <up>   :prev<CR>
 
 
 """"""""""""""""""""""""""""""""""""""""

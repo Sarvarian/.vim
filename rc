@@ -163,9 +163,9 @@ noremap <c-u>  <c-u>zz
 noremap <c-e>  <c-d>zz
 
 " Cursor at Line End
-noremap I $
+noremap gI $
 " Cursor at Line Begin
-noremap Y 0
+noremap I  0
 
 " Cursor at Next String
 noremap h W
@@ -290,13 +290,13 @@ noremap Q q
 """"" Insert Mode
 
 " Insert at Append
-nnoremap i      a
+nnoremap gi    a
 " Insert at Prepend
-nnoremap y      i
+nnoremap i      i
 " Insert at Line End
-nnoremap <c-i>  A
+nnoremap g<c-i>  A
 " Insert at Line Begin
-nnoremap <c-y>  I
+nnoremap <c-i>  I
 
 " Insert Prepend Line
 nnoremap gP O

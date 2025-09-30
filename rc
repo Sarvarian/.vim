@@ -360,8 +360,9 @@ nnoremap  /  :
 cnoremap  /  <c-u><backspace><esc>
 inoremap  /  <esc>
 vnoremap  /  <esc>
+onoremap  /  <esc>
+snoremap  /  <esc>
 inoremap <c-l> <c-o>
-
 nnoremap  K  :nohlsearch<cr>
 
 

@@ -361,8 +361,8 @@ nnoremap  \  :
 """"""""""""""""""""""""""""""""""""""""
 """"" Normal Mode
 
+inoremap <expr> / "\<esc>".col('.')."\<bar>"
 cnoremap  \  <c-u><backspace><esc>
-inoremap  /  <esc><right>
 vnoremap  /  <esc>
 onoremap  /  <esc>
 snoremap  /  <esc>

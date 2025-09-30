@@ -73,6 +73,7 @@ set ignorecase
 set virtualedit=all
 " colorscheme elflord
 set list listchars=tab:⇥\ ,trail:˽,extends:⋯,precedes:⋯,conceal:★
+set showbreak=↳
 
 
 """"""""""""""""""""""""""""""""""""""""

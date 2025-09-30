@@ -358,6 +358,7 @@ cnoremap ?? /
 inoremap ?/ ?
 vnoremap ?/ ?
 cnoremap ?/ ?
+inoremap <c-l> <c-o>
 
 " Repeat
 "noremap . .
@@ -375,7 +376,6 @@ cnoremap ?/ ?
 """"""""""""""""""""""""""""""""""""""""
 """"" Tests
 
-" inoremap <C-O> <C-O>
 
 
 " vim: set ft=vim:

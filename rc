@@ -53,7 +53,7 @@ set background=dark
 set scrolloff=4
 " set mouse=a
 set syntax=on
-set backspace=indent,eol,start
+" set backspace=indent,eol,start
 set tabstop=2
 set softtabstop=2
 set shiftwidth=2
@@ -171,9 +171,9 @@ noremap <c-e>  <c-d>zz
 " nnoremap <s-space> <pageup>
 
 " Cursor at Line End
-noremap gI $
+noremap  I  $
 " Cursor at Line Begin
-noremap I  0
+noremap gI  0
 
 " Cursor at Next String
 noremap h W
@@ -307,11 +307,11 @@ noremap Q q
 " Insert at Append
 nnoremap gi    a
 " Insert at Prepend
-nnoremap i      i
+nnoremap  i    i
 " Insert at Line End
-nnoremap g<c-i>  A
+nnoremap  <c-i>  A
 " Insert at Line Begin
-nnoremap <c-i>  I
+nnoremap g<c-i>  I
 
 " Insert Prepend Line
 nnoremap gP O

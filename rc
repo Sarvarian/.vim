@@ -125,6 +125,7 @@ map <c-n> <nop>
 map <c-p> <nop>
 map gp <nop>
 map gP <nop>
+map <tab> <nop>
 
 
 """"""""""""""""""""""""""""""""""""""""
@@ -237,9 +238,9 @@ noremap  ,      n
 noremap  l      N
 
 " Auto Completion Match Forward
-noremap  <c-,>  <c-n>
+inoremap  <tab>  <c-n>
 " Auto Completion Match Backward
-noremap  <c-l>  <c-p>
+inoremap  <s-tab>  <c-n>
 
 
 

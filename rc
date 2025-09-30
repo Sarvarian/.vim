@@ -70,6 +70,7 @@ set incsearch
 set hlsearch
 set ignorecase
 set virtualedit=all
+" colorscheme elflord
 
 
 """"""""""""""""""""""""""""""""""""""""

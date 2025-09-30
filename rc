@@ -190,13 +190,13 @@ noremap H w
 noremap R b
 
 " Cursor at End of Next String
-noremap w E
+noremap t E
 " Cursor at End of Next Word
-noremap W e
+noremap T e
 " Cursor at End of Previous String
-noremap t gE
+noremap w gE
 " Cursor at End of Previous Word
-noremap T ge
+noremap W ge
 
 " Go to Page Begin
 noremap gg gg

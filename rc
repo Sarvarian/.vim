@@ -69,6 +69,8 @@ set linebreak
 set modeline
 set incsearch
 set hlsearch
+set noerrorbells
+set novisualbell
 set ignorecase
 set virtualedit=all
 " colorscheme elflord

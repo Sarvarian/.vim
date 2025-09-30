@@ -170,6 +170,9 @@ noremap <c-u>  <c-u>zz
 " Page Down Center
 noremap <c-e>  <c-d>zz
 
+nnoremap <space> <pagedown>
+nnoremap <s-space> <pageup>
+
 " Cursor at Line End
 noremap gI $
 " Cursor at Line Begin

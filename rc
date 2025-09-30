@@ -313,9 +313,9 @@ nnoremap  ?    a
 " Insert at Prepend
 nnoremap  /    i
 " Insert at Line End
-nnoremap  <c-i>  A
+nnoremap g/  A
 " Insert at Line Begin
-nnoremap g<c-i>  I
+nnoremap g?  I
 
 " Insert Prepend Line
 nnoremap gP O

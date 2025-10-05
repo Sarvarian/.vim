@@ -91,6 +91,10 @@ set undodir=~/.vim/undo//
 
 "map q <nop>
 "map Q <nop>
+map x <nop>
+map X <nop>
+map m <nop>
+map M <nop>
 map d <nop>
 map D <nop>
 map s <nop>
